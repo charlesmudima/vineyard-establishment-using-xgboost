@@ -1,0 +1,16 @@
+## Methodology to developing xgboost
+
+Description
+I have two shapefiles namely (points_of_presence and points_of absence). 
+- points_of_presence: These contain data on where vineyards exist
+- points_of_absence: These contain data on where there are currently no vineyards
+
+Potential steps in model creation
+- Installation of xgboost library in Python on vs-code
+- export my points data to csv or tables 
+- Read in the data
+    - show the data
+    - Preparing data
+    - Read in my points of presence and points absence 
+- Hyper-parameter optimisation
+- Training the model

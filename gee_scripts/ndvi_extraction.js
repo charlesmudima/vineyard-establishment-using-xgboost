@@ -1,3 +1,5 @@
+// Need to add authentication to the script
+
 var ee = require('@google/earthengine');
 
 // Set study region
