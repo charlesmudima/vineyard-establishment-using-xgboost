@@ -9,8 +9,39 @@ Potential steps in model creation
 - Installation of xgboost library in Python on vs-code
 - export my points data to csv or tables 
 - Read in the data
-    - show the data
+    - Combine the data into one dataframe
+    - data visualisation
     - Preparing data
     - Read in my points of presence and points absence 
 - Hyper-parameter optimisation
 - Training the model
+
+
+## Null check results for points of absence 
+OID_                                                  0
+POINT_X                                               0
+POINT_Y                                               0
+sudem_1000m_albers_filled_wc_1                      169
+sudem_1000m_albers_potential_solar_rad_wh2m_wc_1    170
+euclidean_distance_rivers_1000m_albers_wc_12        174
+ndvi_1000m_albers_wc_12                             174
+sudem_1000m_albers_slope_wc_1                       174
+sudem_1000m_albers_aspect_wc_1                      171
+sudem_1000m_albers_flow_network_wc_1                162
+sudem_1000m_albers_curvature_wc_1                   162
+composite_temp_mean_1000m_k30_wc_1                  239
+composite_temp_min_1000m_k30_wc_1                   239
+composite_temp_max_1000m_k30_wc_1                   239
+composite_rainfall_sum_1000m_k30_wc_1               156
+composite_gdd_grapes_1000m_wc_1                     239
+composite_AETI_1000m_albers_wc_1                    148
+nitrogen_0_to_5cm_1000m_albers_wc_1                 156
+sand_0_to_5cm_1000m_albers_wc_1                     156
+soc_0_to_5cm_1000m_albers_wc_1                      156
+clay_content_0_to_5cm_1000m_albers_wc_1             156
+soil_ph_0_to_5cm_1000m_albers_wc_1                  156
+silt_0_to_5cm_1000m_albers_wc_1                     156
+ndvi_1000m_albers_wc_12_13                          174
+euclidean_distance_roads_1000m_albers_wc_1          183
+euclidean_distance_rivers_1000m_albers_wc_12_13     927
+dtype: int64
