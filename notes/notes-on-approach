@@ -7,14 +7,19 @@ I have two shapefiles namely (points_of_presence and points_of absence).
 
 Potential steps in model creation
 - Installation of xgboost library in Python on vs-code
-- export my points data to csv or tables 
-- Read in the data
+- Export my points data to csv or tables from arc gis pro 
+    - These were seperated by semi-colons';' and not commas ','
+- Read in the data as csv (presence_df and absence_df)
+    - View data
+    - Assing 1 to presence_df and 0 to absence_df
     - Combine the data into one dataframe
-    - data visualisation
-    - Preparing data
-    - Read in my points of presence and points absence 
+    - Check for nulls
+    - Convert data to float or double (because the values in the data are seperated by commas ',' their data type is object )
+    - Data description
+    - Interpolate if there are null values in the datasets (presence and absence)
+    - Data visualisation
 - Hyper-parameter optimisation
-- Training the model
+- Model training
 
 
 ## Null check results for points of absence 
@@ -45,3 +50,22 @@ ndvi_1000m_albers_wc_12_13                          174
 euclidean_distance_roads_1000m_albers_wc_1          183
 euclidean_distance_rivers_1000m_albers_wc_12_13     927
 dtype: int64
+
+## Notes on data normalisation
+
+<!-- # I can potentially look at normalizing the data see the example below
+
+# from sklearn.preprocessing import StandardScaler
+
+# Normalizing 
+# No need to normalize binary or Likert Scaled columns. 
+
+# columns_to_normalize = df.columns[1:5] 
+
+# Initialize the StandardScaler
+
+# scaler = StandardScaler()
+
+# Fit and transform the selected columns
+
+# df[columns_to_normalize] = scaler.fit_transform(df[columns_to_normalize]) -->
